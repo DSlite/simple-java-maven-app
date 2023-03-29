@@ -13,7 +13,7 @@ node {
         stage('Manual Approval') {
             input(message: 'Lanjutkan ke tahap Deploy?')
         }
-        stage('Deliver') {
+        stage('Deploy') {
             sh './jenkins/scripts/deliver.sh'
             sleep(time: 60)
         }
